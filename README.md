@@ -7,4 +7,7 @@ Since the game is quite small it posed some challenge I gladly accepted (no gene
 ### Itchy & Scratchy - Miniature Golf Madness
 Similar as above but no one did it, so.. here it is.
 
+### Battleship
+This one uses timer interrupt. Version floating around doesn't have it defined, so it plays everything wrong. Hence I've added it here.
+
 BTW, I don't use [rgbasm](https://github.com/rednex/rgbds), so these sources won't assemble without few changes.
