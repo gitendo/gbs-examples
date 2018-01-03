@@ -10,4 +10,7 @@ Similar as above but no one did it, so.. here it is.
 ### Battleship
 This one uses timer interrupt. Version floating around doesn't have it defined, so it plays everything wrong. Hence I've added it here.
 
+### Speedy Gonzales - Aztec Adventure
+Typical example of player/song data occupying whole bank. Not that much interesting except the fact it uses two banks and small routine to switch between them.
+
 BTW, I don't use [rgbasm](https://github.com/rednex/rgbds), so these sources won't assemble without few changes.
