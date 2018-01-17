@@ -26,12 +26,19 @@ BANK0	group	$00
 
 ;	org	$0e36
 	push	af
-	call	$056e		; player init
-	pop	af
-	cp	3
-	jr	c,_1
-	inc	a
+	cp	2
+	jr	nz,_1
+	ld	a,$fe		; turn on vol for song 3
+	ld	($cb54),a
 _1
+	call	$056e		; player init
+	ld	a,$ff
+	call	$06df		; song reset
+	pop	af
+	cp	2
+	jr	c,_2
+	inc	a		; song 2 repeats sfx 8 four times, then goes straight to song 3
+_2
 	jp	$06df		; song select
 
 	org	$330a
