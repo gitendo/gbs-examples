@@ -16,4 +16,7 @@ Typical example of player/song data occupying whole bank. Not that much interest
 ### Othello
 Another of those 2 bank games where code, player, sound data and graphics are interwinded. 
 
+### Crayon Shin-chan 4 - Ora no Itazura Daihenshin
+This one is a bit of everything. Player and songs are located in different banks, songs and sfx have own lookup tables, to play sfx with no song in background you need to find one memory location. I think there was 1 unused song here and couple of sfx. Definitely fun!
+
 BTW, I don't use [rgbasm](https://github.com/rednex/rgbds), so these sources won't assemble without few changes.
